@@ -1,4 +1,11 @@
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+CREATE TABLE `province_cities` (
+	`id` bigint(20) UNSIGNED NOT NULL,
+	`parent_id` int(11) NULL DEFAULT NULL,
+	`title` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL
+	) 
+ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (1,NULL,'آذربایجان شرقی'),
 	 (2,NULL,'آذربایجان غربی'),
 	 (3,NULL,'اردبیل'),
@@ -9,7 +16,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (8,NULL,'تهران'),
 	 (9,NULL,'چهارمحال بختیاری'),
 	 (10,NULL,'خراسان جنوبی');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (11,NULL,'خراسان رضوی'),
 	 (12,NULL,'خراسان شمالی'),
 	 (13,NULL,'خوزستان'),
@@ -20,7 +27,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (18,NULL,'قزوین'),
 	 (19,NULL,'قم'),
 	 (20,NULL,'کردستان');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (21,NULL,'کرمان'),
 	 (22,NULL,'کرمانشاه'),
 	 (23,NULL,'کهکیلویه و بویراحمد'),
@@ -31,7 +38,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (28,NULL,'مرکزی'),
 	 (29,NULL,'هرمزگان'),
 	 (30,NULL,'همدان');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (31,NULL,'یزد'),
 	 (32,1,'آذرشهر'),
 	 (33,1,'تیمورلو'),
@@ -42,7 +49,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (38,1,'سهند'),
 	 (39,1,'اهر'),
 	 (40,1,'هوراند');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (41,1,'بستان آباد'),
 	 (42,1,'تیکمه داش'),
 	 (43,1,'بناب'),
@@ -53,7 +60,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (48,1,'جلفا'),
 	 (49,1,'سیه رود'),
 	 (50,1,'هادیشهر');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (51,1,'قره آغاج'),
 	 (52,1,'خمارلو'),
 	 (53,1,'دوزدوزان'),
@@ -64,7 +71,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (58,1,'خامنه'),
 	 (59,1,'سیس'),
 	 (60,1,'شبستر');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (61,1,'شرفخانه'),
 	 (62,1,'شندآباد'),
 	 (63,1,'صوفیان'),
@@ -75,7 +82,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (68,1,'آبش احمد'),
 	 (69,1,'کلیبر'),
 	 (70,1,'خداجو(خراجو)');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (71,1,'مراغه'),
 	 (72,1,'بناب مرند'),
 	 (73,1,'زنوز'),
@@ -86,7 +93,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (78,1,'مبارک شهر'),
 	 (79,1,'ملکان'),
 	 (80,1,'آقکند');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (81,1,'اچاچی'),
 	 (82,1,'ترک'),
 	 (83,1,'ترکمانچای'),
@@ -97,7 +104,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (88,1,'خواجه'),
 	 (89,1,'زرنق'),
 	 (90,1,'کلوانق');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (91,1,'هریس'),
 	 (92,1,'نظرکهریزی'),
 	 (93,1,'هشترود'),
@@ -108,7 +115,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (98,2,'نوشین'),
 	 (99,2,'اشنویه'),
 	 (100,2,'نالوس');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (101,2,'بوکان'),
 	 (102,2,'سیمینه'),
 	 (103,2,'پلدشت'),
@@ -119,7 +126,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (108,2,'آواجیق'),
 	 (109,2,'سیه چشمه'),
 	 (110,2,'قره ضیاءالدین');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (111,2,'ایواوغلی'),
 	 (112,2,'خوی'),
 	 (113,2,'دیزج دیز'),
@@ -130,7 +137,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (118,2,'سردشت'),
 	 (119,2,'میرآباد'),
 	 (120,2,'تازه شهر');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (121,2,'سلماس'),
 	 (122,2,'شاهین دژ'),
 	 (123,2,'کشاورز'),
@@ -141,7 +148,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (128,2,'ماکو'),
 	 (129,2,'خلیفان'),
 	 (130,2,'مهاباد');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (131,2,'باروق'),
 	 (132,2,'چهاربرج'),
 	 (133,2,'میاندوآب'),
@@ -152,7 +159,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (138,3,'بیله سوار'),
 	 (139,3,'جعفرآباد'),
 	 (140,3,'اسلام اباد');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (141,3,'اصلاندوز'),
 	 (142,3,'پارس آباد'),
 	 (143,3,'تازه کند'),
@@ -163,7 +170,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (148,3,'گیوی'),
 	 (149,3,'تازه کندانگوت'),
 	 (150,3,'گرمی');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (151,3,'رضی'),
 	 (152,3,'فخراباد'),
 	 (153,3,'قصابه'),
@@ -174,7 +181,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (158,3,'عنبران'),
 	 (159,3,'نمین'),
 	 (160,3,'کوراییم');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (161,3,'نیر'),
 	 (162,4,'آران وبیدگل'),
 	 (163,4,'ابوزیدآباد'),
@@ -185,7 +192,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (168,4,'مهاباد'),
 	 (169,4,'اژیه'),
 	 (170,4,'اصفهان');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (171,4,'بهارستان'),
 	 (172,4,'تودشک'),
 	 (173,4,'حسن اباد'),
@@ -196,7 +203,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (178,4,'محمدآباد'),
 	 (179,4,'نصرآباد'),
 	 (180,4,'نیک آباد');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (181,4,'ورزنه'),
 	 (182,4,'هرند'),
 	 (183,4,'حبیب آباد'),
@@ -207,7 +214,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (188,4,'شاپورآباد'),
 	 (189,4,'کمشچه'),
 	 (190,4,'افوس');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (191,4,'بویین ومیاندشت'),
 	 (192,4,'تیران'),
 	 (193,4,'رضوانشهر'),
@@ -218,7 +225,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (198,4,'خمینی شهر'),
 	 (199,4,'درچه'),
 	 (200,4,'کوشک');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (201,4,'خوانسار'),
 	 (202,4,'جندق'),
 	 (203,4,'خور'),
@@ -229,7 +236,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (208,4,'سمیرم'),
 	 (209,4,'کمه'),
 	 (210,4,'ونک');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (211,4,'شاهین شهر'),
 	 (212,4,'گرگاب'),
 	 (213,4,'گزبرخوار'),
@@ -240,7 +247,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (218,4,'منظریه'),
 	 (219,4,'داران'),
 	 (220,4,'دامنه');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (221,4,'برف انبار'),
 	 (222,4,'فریدونشهر'),
 	 (223,4,'ابریشم'),
@@ -251,7 +258,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (228,4,'فلاورجان'),
 	 (229,4,'قهدریجان'),
 	 (230,4,'کلیشادوسودرجان');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (231,4,'برزک'),
 	 (232,4,'جوشقان قالی'),
 	 (233,4,'قمصر'),
@@ -262,7 +269,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (238,4,'گلپایگان'),
 	 (239,4,'گلشهر'),
 	 (240,4,'گوگد');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (241,4,'باغ بهادران'),
 	 (242,4,'باغشاد'),
 	 (243,4,'چرمهین'),
@@ -273,7 +280,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (248,4,'فولادشهر'),
 	 (249,4,'ورنامخواست'),
 	 (250,4,'دیزیچه');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (251,4,'زیباشهر'),
 	 (252,4,'طالخونچه'),
 	 (253,4,'کرکوند'),
@@ -284,7 +291,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (258,4,'نایین'),
 	 (259,4,'جوزدان'),
 	 (260,4,'دهق');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (261,4,'علویجه'),
 	 (262,4,'کهریزسنگ'),
 	 (263,4,'گلدشت'),
@@ -295,7 +302,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (268,4,'نطنز'),
 	 (269,5,'اشتهارد'),
 	 (270,5,'چهارباغ');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (271,5,'شهرجدیدهشتگرد'),
 	 (272,5,'کوهسار'),
 	 (273,5,'گلسار'),
@@ -306,7 +313,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (278,5,'آسارا'),
 	 (279,5,'کرج'),
 	 (280,5,'کمال شهر');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (281,5,'گرمدره'),
 	 (282,5,'ماهدشت'),
 	 (283,5,'محمدشهر'),
@@ -317,7 +324,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (288,6,'مورموری'),
 	 (289,6,'ایلام'),
 	 (290,6,'چوار');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (291,6,'ایوان'),
 	 (292,6,'زرنه'),
 	 (293,6,'بدره'),
@@ -328,7 +335,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (298,6,'شباب'),
 	 (299,6,'دره شهر'),
 	 (300,6,'ماژین');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (301,6,'پهله'),
 	 (302,6,'دهلران'),
 	 (303,6,'موسیان'),
@@ -339,7 +346,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (308,6,'مهر'),
 	 (309,6,'صالح آباد'),
 	 (310,6,'مهران');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (311,7,'بوشهر'),
 	 (312,7,'چغادک'),
 	 (313,7,'خارک'),
@@ -350,7 +357,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (318,7,'انارستان'),
 	 (319,7,'جم'),
 	 (320,7,'ریز');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (321,7,'آب پخش'),
 	 (322,7,'برازجان'),
 	 (323,7,'بوشکان'),
@@ -361,7 +368,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (328,7,'کلمه'),
 	 (329,7,'وحدتیه'),
 	 (330,7,'بادوله');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (331,7,'خورموج'),
 	 (332,7,'شنبه'),
 	 (333,7,'کاکی'),
@@ -372,7 +379,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (338,7,'دوراهک'),
 	 (339,7,'امام حسن'),
 	 (340,7,'بندردیلم');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (341,7,'عسلویه'),
 	 (342,7,'نخل تقی'),
 	 (343,7,'بندرکنگان'),
@@ -383,7 +390,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (348,8,'احمد آباد مستوفی'),
 	 (349,8,'اسلامشهر'),
 	 (350,8,'چهاردانگه');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (351,8,'صالحیه'),
 	 (352,8,'گلستان'),
 	 (353,8,'نسیم شهر'),
@@ -394,7 +401,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (358,8,'پردیس'),
 	 (359,8,'پیشوا'),
 	 (360,8,'تهران');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (361,8,'آبسرد'),
 	 (362,8,'آبعلی'),
 	 (363,8,'دماوند'),
@@ -405,7 +412,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (368,8,'نصیرشهر'),
 	 (369,8,'باقرشهر'),
 	 (370,8,'حسن آباد');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (371,8,'ری'),
 	 (372,8,'کهریزک'),
 	 (373,8,'تجریش'),
@@ -416,7 +423,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (378,8,'باغستان'),
 	 (379,8,'شاهدشهر'),
 	 (380,8,'شهریار');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (381,8,'صباشهر'),
 	 (382,8,'فردوسیه'),
 	 (383,8,'وحیدیه'),
@@ -427,7 +434,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (388,8,'صفادشت'),
 	 (389,8,'ملارد'),
 	 (390,8,'جوادآباد');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (391,8,'ورامین'),
 	 (392,9,'اردل'),
 	 (393,9,'دشتک'),
@@ -438,7 +445,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (398,9,'سفیددشت'),
 	 (399,9,'فرادبنه'),
 	 (400,9,'گندمان');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (401,9,'نقنه'),
 	 (402,9,'بن'),
 	 (403,9,'وردنجان'),
@@ -449,7 +456,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (408,9,'طاقانک'),
 	 (409,9,'فرخ شهر'),
 	 (410,9,'کیان');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (411,9,'نافچ'),
 	 (412,9,'هارونی'),
 	 (413,9,'هفشجان'),
@@ -460,7 +467,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (418,9,'فارسان'),
 	 (419,9,'گوجان'),
 	 (420,9,'بازفت');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (421,9,'چلگرد'),
 	 (422,9,'صمصامی'),
 	 (423,9,'دستنا'),
@@ -471,7 +478,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (428,9,'سردشت'),
 	 (429,9,'لردگان'),
 	 (430,9,'مال خلیفه');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (431,9,'منج'),
 	 (432,10,'ارسک'),
 	 (433,10,'بشرویه'),
@@ -482,7 +489,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (438,10,'طبس مسینا'),
 	 (439,10,'قهستان'),
 	 (440,10,'گزیک');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (441,10,'حاجی آباد'),
 	 (442,10,'زهان'),
 	 (443,10,'آیسک'),
@@ -493,7 +500,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (448,10,'دیهوک'),
 	 (449,10,'طبس'),
 	 (450,10,'عشق آباد');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (451,10,'اسلامیه'),
 	 (452,10,'فردوس'),
 	 (453,10,'آرین شهر'),
@@ -504,7 +511,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (458,10,'شوسف'),
 	 (459,10,'نهبندان'),
 	 (460,11,'باخرز');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (461,11,'بجستان'),
 	 (462,11,'یونسی'),
 	 (463,11,'انابد'),
@@ -515,7 +522,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (468,11,'تایباد'),
 	 (469,11,'کاریز'),
 	 (470,11,'مشهدریزه');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (471,11,'احمدابادصولت'),
 	 (472,11,'تربت جام'),
 	 (473,11,'صالح آباد'),
@@ -526,7 +533,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (478,11,'رباط سنگ'),
 	 (479,11,'کدکن'),
 	 (480,11,'جغتای');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (481,11,'نقاب'),
 	 (482,11,'چناران'),
 	 (483,11,'گلبهار'),
@@ -537,7 +544,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (488,11,'سلامی'),
 	 (489,11,'سنگان'),
 	 (490,11,'قاسم آباد');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (491,11,'نشتیفان'),
 	 (492,11,'سلطان آباد'),
 	 (493,11,'داورزن'),
@@ -548,7 +555,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (498,11,'جنگل'),
 	 (499,11,'رشتخوار'),
 	 (500,11,'دولت آباد');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (501,11,'روداب'),
 	 (502,11,'سبزوار'),
 	 (503,11,'ششتمد'),
@@ -559,7 +566,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (508,11,'فریمان'),
 	 (509,11,'قلندرآباد'),
 	 (510,11,'فیروزه');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (511,11,'همت آباد'),
 	 (512,11,'باجگیران'),
 	 (513,11,'قوچان'),
@@ -570,7 +577,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (518,11,'بیدخت'),
 	 (519,11,'کاخک'),
 	 (520,11,'گناباد');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (521,11,'رضویه'),
 	 (522,11,'مشهد'),
 	 (523,11,'مشهد ثامن'),
@@ -581,7 +588,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (528,11,'چکنه'),
 	 (529,11,'خرو'),
 	 (530,11,'درود');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (531,11,'عشق آباد'),
 	 (532,11,'قدمگاه'),
 	 (533,11,'نیشابور'),
@@ -592,7 +599,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (538,12,'حصارگرمخان'),
 	 (539,12,'جاجرم'),
 	 (540,12,'سنخواست');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (541,12,'شوقان'),
 	 (542,12,'راز'),
 	 (543,12,'زیارت'),
@@ -603,7 +610,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (548,12,'فاروج'),
 	 (549,12,'ایور'),
 	 (550,12,'درق');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (551,12,'گرمه'),
 	 (552,12,'آشخانه'),
 	 (553,12,'آوا'),
@@ -614,7 +621,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (558,13,'چویبده'),
 	 (559,13,'آغاجاری'),
 	 (560,13,'امیدیه');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (561,13,'جایزان'),
 	 (562,13,'آبژدان'),
 	 (563,13,'قلعه خواجه'),
@@ -625,7 +632,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (568,13,'حسینیه'),
 	 (569,13,'الهایی'),
 	 (570,13,'اهواز');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (571,13,'ایذه'),
 	 (572,13,'دهدز'),
 	 (573,13,'باغ ملک'),
@@ -636,7 +643,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (578,13,'ملاثانی'),
 	 (579,13,'ویس'),
 	 (580,13,'بندرامام خمینی');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (581,13,'بندرماهشهر'),
 	 (582,13,'چمران'),
 	 (583,13,'بهبهان'),
@@ -647,7 +654,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (588,13,'خرمشهر'),
 	 (589,13,'مقاومت'),
 	 (590,13,'مینوشهر');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (591,13,'چغامیش'),
 	 (592,13,'حمزه'),
 	 (593,13,'دزفول'),
@@ -658,7 +665,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (598,13,'صفی آباد'),
 	 (599,13,'میانرود'),
 	 (600,13,'ابوحمیظه');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (601,13,'بستان'),
 	 (602,13,'سوسنگرد'),
 	 (603,13,'کوت سیدنعیم'),
@@ -669,7 +676,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (608,13,'دارخوین'),
 	 (609,13,'شادگان'),
 	 (610,13,'الوان');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (611,13,'حر'),
 	 (612,13,'شاوور'),
 	 (613,13,'شوش'),
@@ -680,7 +687,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (618,13,'گوریه'),
 	 (619,13,'کوت عبداله'),
 	 (620,13,'ترکالکی');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (621,13,'جنت مکان'),
 	 (622,13,'سماله'),
 	 (623,13,'صالح شهر'),
@@ -691,7 +698,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (628,13,'هفتگل'),
 	 (629,13,'زهره'),
 	 (630,13,'هندیجان');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (631,13,'رفیع'),
 	 (632,13,'هویزه'),
 	 (633,14,'ابهر'),
@@ -702,7 +709,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (638,14,'زرین رود'),
 	 (639,14,'سجاس'),
 	 (640,14,'سهرورد');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (641,14,'قیدار'),
 	 (642,14,'کرسف'),
 	 (643,14,'گرماب'),
@@ -713,7 +720,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (648,14,'نیک پی'),
 	 (649,14,'سلطانیه'),
 	 (650,14,'آب بر');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (651,14,'چورزق'),
 	 (652,14,'دندی'),
 	 (653,14,'ماه نشان'),
@@ -724,7 +731,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (658,15,'دیباج'),
 	 (659,15,'کلاته'),
 	 (660,15,'سرخه');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (661,15,'سمنان'),
 	 (662,15,'بسطام'),
 	 (663,15,'بیارجمند'),
@@ -735,7 +742,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (668,15,'ایوانکی'),
 	 (669,15,'گرمسار'),
 	 (670,15,'درجزین');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (671,15,'شهمیرزاد'),
 	 (672,15,'مهدی شهر'),
 	 (673,15,'میامی'),
@@ -746,7 +753,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (678,16,'چابهار'),
 	 (679,16,'نگور'),
 	 (680,16,'خاش');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (681,16,'نوک آباد'),
 	 (682,16,'گلمورتی'),
 	 (683,16,'بنجار'),
@@ -757,7 +764,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (688,16,'جالق'),
 	 (689,16,'سراوان'),
 	 (690,16,'سیرکان');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (691,16,'گشت'),
 	 (692,16,'محمدی'),
 	 (693,16,'پیشین'),
@@ -768,7 +775,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (698,16,'فنوج'),
 	 (699,16,'قصرقند'),
 	 (700,16,'زرآباد');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (701,16,'کنارک'),
 	 (702,16,'مهرستان'),
 	 (703,16,'میرجاوه'),
@@ -779,7 +786,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (708,16,'شهرک علی اکبر'),
 	 (709,16,'محمدآباد'),
 	 (710,16,'دوست محمد');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (711,17,'آباده'),
 	 (712,17,'ایزدخواست'),
 	 (713,17,'بهمن'),
@@ -790,7 +797,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (718,17,'ایج'),
 	 (719,17,'رونیز'),
 	 (720,17,'اقلید');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (721,17,'حسن اباد'),
 	 (722,17,'دژکرد'),
 	 (723,17,'سده'),
@@ -801,7 +808,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (728,17,'سعادت شهر'),
 	 (729,17,'مادرسلیمان'),
 	 (730,17,'باب انار');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (731,17,'جهرم'),
 	 (732,17,'خاوران'),
 	 (733,17,'دوزه'),
@@ -812,7 +819,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (738,17,'قادراباد'),
 	 (739,17,'خنج'),
 	 (740,17,'جنت شهر');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (741,17,'داراب'),
 	 (742,17,'دوبرجی'),
 	 (743,17,'فدامی'),
@@ -823,7 +830,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (748,17,'شهرپیر'),
 	 (749,17,'اردکان'),
 	 (750,17,'بیضا');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (751,17,'هماشهر'),
 	 (752,17,'سروستان'),
 	 (753,17,'کوهنجان'),
@@ -834,7 +841,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (758,17,'شیراز'),
 	 (759,17,'لپویی'),
 	 (760,17,'دهرم');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (761,17,'فراشبند'),
 	 (762,17,'نوجین'),
 	 (763,17,'زاهدشهر'),
@@ -845,7 +852,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (768,17,'نوبندگان'),
 	 (769,17,'فیروزآباد'),
 	 (770,17,'میمند');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (771,17,'افزر'),
 	 (772,17,'امام شهر'),
 	 (773,17,'قیر'),
@@ -856,7 +863,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (778,17,'قایمیه'),
 	 (779,17,'کازرون'),
 	 (780,17,'کنارتخته');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (781,17,'نودان'),
 	 (782,17,'کوار'),
 	 (783,17,'گراش'),
@@ -867,7 +874,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (788,17,'خور'),
 	 (789,17,'عمادده'),
 	 (790,17,'لار');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (791,17,'لطیفی'),
 	 (792,17,'اشکنان'),
 	 (793,17,'اهل'),
@@ -878,7 +885,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (798,17,'سیدان'),
 	 (799,17,'کامفیروز'),
 	 (800,17,'مرودشت');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (801,17,'بابامنیر'),
 	 (802,17,'خومه زار'),
 	 (803,17,'نورآباد'),
@@ -889,7 +896,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (808,17,'وراوی'),
 	 (809,17,'آباده طشک'),
 	 (810,17,'قطرویه');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (811,17,'مشکان'),
 	 (812,17,'نی ریز'),
 	 (813,18,'آبیک'),
@@ -900,7 +907,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (818,18,'بیدستان'),
 	 (819,18,'شریفیه'),
 	 (820,18,'محمدیه');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (821,18,'ارداق'),
 	 (822,18,'بویین زهرا'),
 	 (823,18,'دانسفهان'),
@@ -911,7 +918,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (828,18,'خرمدشت'),
 	 (829,18,'ضیاڈآباد'),
 	 (830,18,'نرجه');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (831,18,'اقبالیه'),
 	 (832,18,'رازمیان'),
 	 (833,18,'سیردان'),
@@ -922,7 +929,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (838,19,'جعفریه'),
 	 (839,19,'دستجرد'),
 	 (840,19,'سلفچگان');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (841,19,'قم'),
 	 (842,19,'قنوات'),
 	 (843,19,'کهک'),
@@ -933,7 +940,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (848,20,'بابارشانی'),
 	 (849,20,'بیجار'),
 	 (850,20,'پیرتاج');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (851,20,'توپ آغاج'),
 	 (852,20,'یاسوکند'),
 	 (853,20,'بلبان آباد'),
@@ -944,7 +951,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (858,20,'سروآباد'),
 	 (859,20,'سقز'),
 	 (860,20,'صاحب');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (861,20,'سنندج'),
 	 (862,20,'شویشه'),
 	 (863,20,'دزج'),
@@ -955,7 +962,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (868,20,'موچش'),
 	 (869,20,'برده رشه'),
 	 (870,20,'چناره');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (871,20,'کانی دینار'),
 	 (872,20,'مریوان'),
 	 (873,21,'ارزوییه'),
@@ -966,7 +973,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (878,21,'بردسیر'),
 	 (879,21,'دشتکار'),
 	 (880,21,'گلزار');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (881,21,'لاله زار'),
 	 (882,21,'نگار'),
 	 (883,21,'بروات'),
@@ -977,7 +984,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (888,21,'درب بهشت'),
 	 (889,21,'رابر'),
 	 (890,21,'هنزا');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (891,21,'راور'),
 	 (892,21,'هجدک'),
 	 (893,21,'بهرمان'),
@@ -988,7 +995,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (898,21,'رودبار'),
 	 (899,21,'زهکلوت'),
 	 (900,21,'گنبکی');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (901,21,'محمدآباد'),
 	 (902,21,'خانوک'),
 	 (903,21,'ریحان'),
@@ -999,7 +1006,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (908,21,'خواجو شهر'),
 	 (909,21,'زیدآباد'),
 	 (910,21,'سیرجان');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (911,21,'نجف شهر'),
 	 (912,21,'هماشهر'),
 	 (913,21,'جوزم'),
@@ -1010,7 +1017,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (918,21,'دوساری'),
 	 (919,21,'عنبرآباد'),
 	 (920,21,'مردهک');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (921,21,'فاریاب'),
 	 (922,21,'فهرج'),
 	 (923,21,'قلعه گنج'),
@@ -1021,7 +1028,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (928,21,'چترود'),
 	 (929,21,'راین'),
 	 (930,21,'زنگی آباد');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (931,21,'شهداد'),
 	 (932,21,'کاظم آباد'),
 	 (933,21,'کرمان'),
@@ -1032,7 +1039,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (938,21,'کیانشهر'),
 	 (939,21,'کهنوج'),
 	 (940,21,'منوجان');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (941,21,'نودژ'),
 	 (942,21,'نرماشیر'),
 	 (943,21,'نظام شهر'),
@@ -1043,7 +1050,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (948,22,'پاوه'),
 	 (949,22,'نودشه'),
 	 (950,22,'نوسود');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (951,22,'ازگله'),
 	 (952,22,'تازه آباد'),
 	 (953,22,'جوانرود'),
@@ -1054,7 +1061,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (958,22,'شاهو'),
 	 (959,22,'سرپل ذهاب'),
 	 (960,22,'سطر');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (961,22,'سنقر'),
 	 (962,22,'صحنه'),
 	 (963,22,'میان راهان'),
@@ -1065,7 +1072,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (968,22,'کوزران'),
 	 (969,22,'هلشی'),
 	 (970,22,'کنگاور');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (971,22,'گودین'),
 	 (972,22,'سرمست'),
 	 (973,22,'گیلانغرب'),
@@ -1076,7 +1083,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (978,23,'گراب سفلی'),
 	 (979,23,'مادوان'),
 	 (980,23,'مارگون');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (981,23,'یاسوج'),
 	 (982,23,'لیکک'),
 	 (983,23,'چرام'),
@@ -1087,7 +1094,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (988,23,'دیشموک'),
 	 (989,23,'سوق'),
 	 (990,23,'قلعه رییسی');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (991,23,'دوگنبدان'),
 	 (992,23,'لنده'),
 	 (993,24,'آزادشهر'),
@@ -1098,7 +1105,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (998,24,'بندرگز'),
 	 (999,24,'نوکنده'),
 	 (1000,24,'بندرترکمن');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (1001,24,'تاتارعلیا'),
 	 (1002,24,'خان ببین'),
 	 (1003,24,'دلند'),
@@ -1109,7 +1116,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (1008,24,'مزرعه'),
 	 (1009,24,'کردکوی'),
 	 (1010,24,'فراغی');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (1011,24,'کلاله'),
 	 (1012,24,'گالیکش'),
 	 (1013,24,'جلین'),
@@ -1120,7 +1127,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (1018,24,'اینچه برون'),
 	 (1019,24,'گنبدکاووس'),
 	 (1020,24,'مراوه');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (1021,24,'مینودشت'),
 	 (1022,25,'آستارا'),
 	 (1023,25,'لوندویل'),
@@ -1131,7 +1138,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (1028,25,'بندرانزلی'),
 	 (1029,25,'خشکبیجار'),
 	 (1030,25,'خمام');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (1031,25,'رشت'),
 	 (1032,25,'سنگر'),
 	 (1033,25,'کوچصفهان'),
@@ -1142,7 +1149,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (1038,25,'بره سر'),
 	 (1039,25,'توتکابن'),
 	 (1040,25,'جیرنده');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (1041,25,'رستم آباد'),
 	 (1042,25,'رودبار'),
 	 (1043,25,'لوشان'),
@@ -1153,7 +1160,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (1048,25,'کلاچای'),
 	 (1049,25,'واجارگاه'),
 	 (1050,25,'دیلمان');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (1051,25,'سیاهکل'),
 	 (1052,25,'احمدسرگوراب'),
 	 (1053,25,'شفت'),
@@ -1164,7 +1171,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (1058,25,'چوبر'),
 	 (1059,25,'حویق'),
 	 (1060,25,'لیسار');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (1061,25,'هشتپر (تالش)'),
 	 (1062,25,'فومن'),
 	 (1063,25,'ماسوله'),
@@ -1175,7 +1182,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (1068,25,'چاف و چمخاله'),
 	 (1069,25,'شلمان'),
 	 (1070,25,'کومله');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (1071,25,'لنگرود'),
 	 (1072,25,'بازار جمعه'),
 	 (1073,25,'ماسال'),
@@ -1186,7 +1193,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (1078,26,'اشترینان'),
 	 (1079,26,'بروجرد'),
 	 (1080,26,'پلدختر');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (1081,26,'معمولان'),
 	 (1082,26,'بیران شهر'),
 	 (1083,26,'خرم آباد'),
@@ -1197,7 +1204,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (1088,26,'چالانچولان'),
 	 (1089,26,'دورود'),
 	 (1090,26,'سراب دوره');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (1091,26,'ویسیان'),
 	 (1092,26,'چقابل'),
 	 (1093,26,'الشتر'),
@@ -1208,7 +1215,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (1098,26,'گراب'),
 	 (1099,27,'آمل'),
 	 (1100,27,'امامزاده عبدالله');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (1101,27,'دابودشت'),
 	 (1102,27,'رینه'),
 	 (1103,27,'گزنک'),
@@ -1219,7 +1226,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (1108,27,'گتاب'),
 	 (1109,27,'گلوگاه'),
 	 (1110,27,'مرزیکلا');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (1111,27,'بابلسر'),
 	 (1112,27,'بهنمیر'),
 	 (1113,27,'هادی شهر'),
@@ -1230,7 +1237,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (1118,27,'خرم آباد'),
 	 (1119,27,'شیرود'),
 	 (1120,27,'نشتارود');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (1121,27,'جویبار'),
 	 (1122,27,'کوهی خیل'),
 	 (1123,27,'چالوس'),
@@ -1241,7 +1248,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (1128,27,'پایین هولار'),
 	 (1129,27,'ساری'),
 	 (1130,27,'فریم');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (1131,27,'کیاسر'),
 	 (1132,27,'آلاشت'),
 	 (1133,27,'پل سفید'),
@@ -1252,7 +1259,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (1138,27,'عباس اباد'),
 	 (1139,27,'کلارآباد'),
 	 (1140,27,'فریدونکنار');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (1141,27,'ارطه'),
 	 (1142,27,'قایم شهر'),
 	 (1143,27,'کلاردشت'),
@@ -1263,7 +1270,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (1148,27,'نکا'),
 	 (1149,27,'ایزدشهر'),
 	 (1150,27,'بلده');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (1151,27,'چمستان'),
 	 (1152,27,'رویان'),
 	 (1153,27,'نور'),
@@ -1274,7 +1281,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (1158,28,'اراک'),
 	 (1159,28,'داودآباد'),
 	 (1160,28,'ساروق');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (1161,28,'کارچان'),
 	 (1162,28,'تفرش'),
 	 (1163,28,'خمین'),
@@ -1285,7 +1292,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (1168,28,'نراق'),
 	 (1169,28,'پرندک'),
 	 (1170,28,'خشکرود');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (1171,28,'رازقان'),
 	 (1172,28,'زاویه'),
 	 (1173,28,'مامونیه'),
@@ -1296,7 +1303,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (1178,28,'آستانه'),
 	 (1179,28,'توره'),
 	 (1180,28,'شازند');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (1181,28,'شهباز'),
 	 (1182,28,'مهاجران'),
 	 (1183,28,'هندودر'),
@@ -1307,7 +1314,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (1188,28,'محلات'),
 	 (1189,28,'نیمور'),
 	 (1190,29,'ابوموسی');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (1191,29,'بستک'),
 	 (1192,29,'جناح'),
 	 (1193,29,'سردشت'),
@@ -1318,7 +1325,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (1198,29,'فین'),
 	 (1199,29,'قلعه قاضی'),
 	 (1200,29,'بندرلنگه');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (1201,29,'چارک'),
 	 (1202,29,'کنگ'),
 	 (1203,29,'کیش'),
@@ -1329,7 +1336,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (1208,29,'بندرجاسک'),
 	 (1209,29,'حاجی اباد'),
 	 (1210,29,'سرگز');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (1211,29,'فارغان'),
 	 (1212,29,'خمیر'),
 	 (1213,29,'رویدر'),
@@ -1340,7 +1347,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (1218,29,'کوهستک'),
 	 (1219,29,'گروک'),
 	 (1220,29,'درگهان');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (1221,29,'سوزا'),
 	 (1222,29,'قشم'),
 	 (1223,29,'هرمز'),
@@ -1351,7 +1358,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (1228,30,'آجین'),
 	 (1229,30,'اسدآباد'),
 	 (1230,30,'بهار');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (1231,30,'صالح آباد'),
 	 (1232,30,'لالجین'),
 	 (1233,30,'مهاجران'),
@@ -1362,7 +1369,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (1238,30,'رزن'),
 	 (1239,30,'قروه درجزین'),
 	 (1240,30,'فامنین');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (1241,30,'شیرین سو'),
 	 (1242,30,'کبودرآهنگ'),
 	 (1243,30,'گل تپه'),
@@ -1373,7 +1380,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (1248,30,'ملایر'),
 	 (1249,30,'برزول'),
 	 (1250,30,'فیروزان');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (1251,30,'گیان'),
 	 (1252,30,'نهاوند'),
 	 (1253,30,'جورقان'),
@@ -1384,7 +1391,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (1258,31,'مهردشت'),
 	 (1259,31,'احمدآباد'),
 	 (1260,31,'اردکان');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (1261,31,'عقدا'),
 	 (1262,31,'اشکذر'),
 	 (1263,31,'خضرآباد'),
@@ -1395,7 +1402,7 @@ INSERT INTO loc.province_cities (id,parent,title) VALUES
 	 (1268,31,'مروست'),
 	 (1269,31,'هرات'),
 	 (1270,31,'مهریز');
-INSERT INTO loc.province_cities (id,parent,title) VALUES
+INSERT INTO province_cities (id,parent_id,title) VALUES
 	 (1271,31,'بفروییه'),
 	 (1272,31,'میبد'),
 	 (1273,31,'ندوشن'),
